@@ -1,0 +1,23 @@
+<ChatParams>
+  <messaging>
+    <sender>EVOLUTION</sender>
+    <evolutionParams>
+      <instanceName>box</instanceName>
+      <apiKey>1beae329-c931-468a-8040-17412fd1bf01</apiKey>
+      <createInstanceKey>B6D711FCDE4D4FD5936544120E713976</createInstanceKey>
+      <primaryNumber>5548991026166</primaryNumber>
+      <server>localhost</server>
+      <port>8080</port>
+    </evolutionParams>
+  </messaging>
+  <aiEngine>
+    <engine>GOOGLE</engine>
+    <googleAIParams>
+      <projectID>ThLinkAI</projectID>
+      <promptFileName>./Config/Google/GoogleQI-17.csv</promptFileName>
+      
+      <apiKey>AIzaSyBycQebz50nrktuhr_vpWdekOI7bdiAmJM</apiKey>
+    </googleAIParams>
+  </aiEngine>
+  <version>AB.CD</version>
+</ChatParams>

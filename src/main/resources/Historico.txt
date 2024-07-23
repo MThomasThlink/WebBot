@@ -1,0 +1,20 @@
+V 0.0.1 [18/07/2024]
+Versão implementada na plataforma SpringBoot, capaz de:
+    - receber o webhook no padrão Evolution
+    - inciar autonomamente um GlobalManager que perodicamente verifica os clientes e instâncias válidas
+    - aciona o mecanismo de comunicação com AI
+    - responde ao usuário
+    - mapeia a base de dados com relacionamentos
+    - implementa relatórios na forma de listas (com estatísticas) e gráficos (histo) com o recurso de analisar somente a primeira resposta (opcional)
+TODO: desativar a leitura de parâmetros via arquivo (mas o modelo de dados pode ser mantido).
+
+V 0.0.2 [20/07/2024]
+    - tenta eliminar ao máximo o arquivo de configuração XML
+    - verifica se Evolution está presente (em  Global Manager). Verifica regularmente pois se Evoltion não estiver operando, algo deve ser feito. 
+    - IM passa a verificar (dentro do timer) se a instância existe e se está conectada. Só repassa mensagens para ChatManager se a instância estiver conectada.
+    - URL de webHook no formato "http://localhost:8888/multiwebhook/{instanceName}/{command}"
+
+V 0 0.8 [21/07/2024]
+    - várias tentativas com TomCat 9 (não funcionou). TomCat 10 ok.
+    - correção de erro na espera pelo Evolution (retornar responseCode = -1 se erro). 
+    - banco de dados Derby foi deixado de lado em favor do H2. Testados relatórios e gráficos.
